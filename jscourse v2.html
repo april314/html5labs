@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Codeacademy Courses Page</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        * { font-family: Verdana; }
+        body { background-color: #f8fee6; cursor: default; }
+        table { width: 100%; }
+        td { vertical-align: top; }
+        p { font-size: 12pt; }
+        h2 { font-size: 16pt; }
+        code { font-family: monospace; }
+    </style>
+</head>
+
+<body> <!-- Here's the body of my page - actual displayable content-->
+    <table>
+    <caption style="font-size: 18pt"><b>Welcome to Codeacademy JavaScript Course!</b></caption>
+    <col style="width:50%">
+    <col style="width:50%">
+    <tr><td style="text-align:justify">
+    <h2>Course overview</h2>
+    
+    <p title="Course overview">
+This course will teach what the most fundamental programming concepts are and how to use them. You'll learn about data types, functions, loops, control flow, and objects. In the end, you'll get a chance to put everything together to build your own game!<br><br>
+JavaScript is the programming language of the web. It's one of the most popular and in demand skills in today's job market for good reason.     JavaScript not only enables you to add powerful interactions to websites,
+but is also the foundation of a lot of commonly used libraries (like    jQuery) and frameworks (like AngularJS, ReactJS and NodeJS). As a web   developer, it is essential that you have a solid understanding of this  versatile language.<br><br>
+During the course you are required to pass 9 quizzes and at the end you   will create and submit your own project. Each lesson will contain three parts: theoretical introduction and links to reading materials, a useful and amazing practical exercise, and a quiz.
+    </p>
+    
+    <div style="background-color:#ffffff"><pre><code>
+    // Wait for DOM to load
+    document.addEventListener("DOMContentLoaded", function(event) {
+      // Put the button into a variable
+      var e = document.getElementById("go");
+  
+      // Wait for user to click the button
+      e.addEventListener( "click", function() {
+        
+        // Do the prompt and save user input to a variable
+        var name = prompt("What is your name?","Homer");
+        
+        // Write out the user's input
+        document.getElementById( "msg" ).innerText = name;
+      }, false);
+    });
+    </code></pre>
+    </div>
+    </td>
+    
+    <td>
+    <h2>Syllabus</h2>
+        <details>
+        <summary><b>Lesson 1. Introduction to JavaScript</b><br></summary>
+            <ul>
+                <li>Getting started with programming</li>
+                <li>Code your own adventure!</li>
+                <li>Multiple choice quiz</li>
+            </ul>
+        </details>
+        <details>
+        <summary><b>Lesson 2. Functions</b><br></summary>
+            <ul>
+                <li>Introduction to functions in JS (il)</li>
+                <li>Build "Rock, Paper, Scissors"</li>
+                <li>Multiple Choice Quiz</li>
+            </ul>
+        </details>
+        <details>
+        <summary><b>Lesson 3. 'For' Loops in JavaScript</b><br></summary>
+            <ul>
+                <li>Introduction</li>
+                <li>Search Text for your Name</li>
+                <li>Multiple choice quiz</li>
+            </ul>
+        </details>
+        <details>
+        <summary><b>Lesson 4. 'While' Loops in JavaScript</b><br></summary>
+            <ul>
+                <li>Introduction</li>
+                <li>Dragon Slayer!</li>
+                <li>Multiple choice quiz</li>
+            </ul>
+        </details>
+        <details>
+        <summary><b>Lesson 5. Control Flow</b><br></summary>
+            <ul>
+                <li>More on Control Flow</li>
+                <li>Code your own adventure!</li>
+                <li>Multiple choice quiz</li>
+            </ul>
+        </details>
+        <details>
+        <summary><b>Lesson 6. Data Structures</b><br></summary>
+            <ul>
+                <li>Arrays and Objects in JS</li>
+                <li>Contact List</li>
+                <li>Multiple choice quiz</li>
+            </ul>
+        </details>
+        <details>
+        <summary><b>Lesson 7. Objects I</b><br></summary>
+            <ul>
+                <li>Introduction</li>
+                <li>Building an Address book</li>
+                <li>Multiple choice quiz</li>
+            </ul>
+        </details>
+        <details>
+        <summary><b>Lesson 8. Objects II</b><br></summary>
+            <ul>
+                <li>Intro</li>
+                <li>Building a Cash Register</li>
+                <li>Multiple choice quiz</li>
+                <li>JavaScript Review (Multiple choice quiz)</li>
+            </ul>
+         </details>
+        <b>Lesson 9. JAVASCRIPT FINAL PROJECT</b>
+    </td></tr>
+    
+    </table>
+</body>
+</html>
