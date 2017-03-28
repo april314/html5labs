@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Codeacademy Practical Training Page</title>
+<meta charset="UTF-8" />
+
+<style type="text/css">
+    * { font-family: Calibri; }
+    body { background-color: white; cursor: default; }
+
+    header, footer { 
+        padding: 1em;
+        font-size: 16pt; 
+        color: #e9f9b8;
+        background-color: #001a00;
+        text-align: center;
+    }
+    table { 
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        }
+    td { 
+        vertical-align: top; 
+        padding: 1em;
+    }
+    p { font-size: 16pt; text-align: justify; }
+    </style>
+</head>
+
+<body> <!-- Here's the body of my page - actual displayable content-->
+    <header><h1>Welcome to CodeAcademy!</h1></header>
+        
+    <table>
+    <col style="width:50%">
+    <col style="width:50%">
+    <tr><td>
+    <h2>Practical Training Overview</h2>
+    <p>CodeAcademy has developed student hiring options designed to help you find the right opportunity for your profile.<br>
+    Our mission is to recruit by attracting talented students for opportunities in our country and abroad.</p>
+    </td>
+    
+    <td>
+    <!--video-->
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/qmH-za7Nn_M" frameborder="1" allowfullscreen></iframe>
+    </td></tr>
+    
+    <tr>
+    <td colspan="2">
+    <h3>Just fill in this application form!</h3>
+    <form action="mailto:nasturtiumk@yandex.com" method="post">
+        <fieldset>
+        <table>
+        <tr><td>
+        First name:<br>
+        <input type="text" name="firstname" placeholder="Jane" autofocus required><br>
+        Last name:<br>
+        <input type="text" name="lastname" placeholder="Doe" required><br>
+        Gender:<br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female" checked> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+        </td>
+        <td>
+        E-mail:<br>
+        <input type="email" name="email" placeholder="box@something.com" required><br>
+        Phone number:<br>
+        <input type="text" name="phone" placeholder="+375291234567"><br>
+        University:<br>
+        <input type="text" name="university" placeholder="BSUIR" required><br>
+        </td>
+        <td>
+        Type of Practical Training:<br>
+        <select name="university">
+            <option value="industrial placement">Industrial Placement</option>
+            <option value="internship">Internship</option>
+         </select><br>
+        
+        Skills:<br>
+        <input list="skills" name="skill">
+        <datalist id="skills">
+            <option value="Application Development">
+            <option value="Coding">
+            <option value="Database">
+            <option value="Linux">
+            <option value="Networks">
+            <option value="Systems Software">
+            <option value="Web Development">
+            <option value="Web Design">
+        </datalist><br>
+        
+        Hours in the office (between 1 and 8):
+        <input type="number" name="quantity" min="1" max="8" required><br>
+        
+        Select a photo: <input type="file" name="img"><br>
+        
+        <br>
+        <!--input type="submit" value="Submit"-->
+        <button type="button" onclick="alert('You shall not pass!')">Submit</button>
+        <input type="reset" value="Clear all">
+        </td>
+        </tr>
+        </table>
+        </fieldset>
+    </form>
+    </td>
+    </tr>
+    
+    </table>
+    <footer>Copyright &copy CodeAcademy</footer>
+</body>
+</html>
