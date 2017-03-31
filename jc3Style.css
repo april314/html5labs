@@ -1,0 +1,56 @@
+/* a stylesheet for page 1, task 3 - a JavaScript Course add from CodeAcademy */
+body {
+  background-image: url("src/bimg1.jpg");
+  background-attachment: fixed;
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  color: #331a00;
+}
+
+header, footer {
+  color: ivory;
+  background-color: #331a00;
+  text-align: center;
+  padding: 1em;
+  text-shadow: 2px 2px grey;
+}
+
+h1,h2,h3 {
+  color: ivory;
+  background-color: #331a00;
+  text-shadow: 2px 2px grey;
+}
+
+div.ord {
+  background-color: ivory;
+  border: 1px solid ivory;
+  background-clip: content-box;
+  box-shadow: 5px 5px 5px 5px #331a00;
+  padding: 10px;
+  margin: 20px 10%;
+  max-width: 80%;
+}
+
+div.show:hover ul {
+  display: block;
+}
+
+p {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+p.show:hover {
+  background-color: #fdf7f2;
+}
+
+ul {
+  font-size: 1.25em;
+  text-align: justify;
+  display: none;
+}
+
+code {
+  background-color: ivory;
+  color: #003333;
+}
