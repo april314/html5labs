@@ -1,0 +1,107 @@
+/* a stylesheet for page 2, tasks 3-4 - a Practical Training add from CodeAcademy */
+
+body { 
+  font-family: "Roboto", sans-serif;
+  background-image: url("src2/fish.jpg");
+  background-attachment: fixed; 
+}
+
+header {
+  padding: 1em; 
+  color: #fbfef3; 
+  background-color: #000800;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3em;
+  font-variant: small-caps;
+  text-shadow: 0 0 13px #004d00, 0 0 30px #FFFFFF;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: row wrap;
+  flex-wrap: row wrap;
+  max-width: 100%;
+}
+
+.flex-item {
+  background-color: #fbfef3;
+  box-shadow: 5px 5px 5px 5px #000800;
+  max-width: 55%;
+  margin: 0.5%;
+  padding: 1em;
+}
+
+p { 
+  font-size: 16pt; 
+  text-align: justify; 
+}
+
+p::first-letter {
+  color: red;
+  font-size: 140%;
+}
+
+figure { 
+  float: left;
+  transition: transform 3s;
+  transition-timing-function: ease-out;
+}
+
+figure:hover {
+  transform: rotateY(360deg);
+}
+
+img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+input[type=text], input[type=email], input[type=date], input[type=file], input[type=number], select {
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=button], input[type=reset] {
+  width: 45%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=button]:hover, input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+fieldset {
+  margin: 10px;
+  padding: 10px;
+  max-width: 100%;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+footer {
+  padding: 2em;
+  font-size: 0.8em; 
+  color: #fbfef3; 
+  background-color: #000800;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+}

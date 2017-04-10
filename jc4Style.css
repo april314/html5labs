@@ -1,0 +1,80 @@
+/* a stylesheet for page 1, tasks 3-4 - a JavaScript Course add from CodeAcademy */
+
+body {
+  background-image: url("src/bimg1.jpg");
+  background-attachment: fixed;
+  color: #331a00;
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+header, footer {
+  color: ivory;
+  background-color: #331a00;
+  text-align: center;
+  padding: 1em;
+  transition: width 4s;
+  transition-timing-function: ease-out;
+}
+
+@keyframes textglow {
+  0% {color: ivory;}
+  50% {color: orange;}
+  100% {color: ivory;}
+}
+
+h1,h2 {
+  color: ivory;
+  background-color: #331a00;
+  text-shadow: 2px 2px grey;
+  animation-name: textglow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+div.ord {
+  background-color: ivory;
+  border: 1px solid ivory;
+  background-clip: content-box;
+  box-shadow: 5px 5px 5px 5px #331a00;
+  padding: 10px;
+  margin: 20px 10%;
+  max-width: 80%;
+}
+
+p {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+p.show:hover {
+  color: ivory;
+  background-color: #331a00;
+}
+
+ul {
+  display: none;
+  margin: 0%;
+  font-size: 1.25em;
+  text-align: justify;
+  position: absolute;
+  background-color: ivory;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 12px;
+  max-width: 30%;
+  z-index: 1;
+}
+
+div.show:hover ul {
+  display: block;
+}
+
+code {
+  background-color: ivory;
+  color: #003333;
+}
+
+.fa-align-left, .fa-hand-peace-o, .fa-calendar {
+  padding-right: 1em;
+  padding-left: 0.5em;
+}
